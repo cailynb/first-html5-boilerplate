@@ -3,14 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Unplugged About</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Unplugged | About</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
 
   <link rel="manifest" href="../site.webmanifest">
   <link rel="apple-touch-icon" href="../icon.png">
@@ -18,27 +14,9 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
-</html>
 
 <header>
   <h1>Unplugged</h1>
@@ -60,16 +38,17 @@
 
   <section class="mission">
     <div class="content-wrapper">
-        <div class="mission-content">
-          <h1>Our Mission - we want to make you the team you always wanted to be.</h1>
-          <p>Loren ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vivera maecenas accumsan
-            lacus vel facilisis. <br>
-            Loren ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididunt ut labore
+      <h2>Our Mission - we want to make you the team you always wanted to be.</h2>
+      <div class="mission-content">
+        <p>Loren ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vivera maecenas accumsan
             lacus vel facilisis.
-          </p>
-        </div>
+        </p>
+        <p>Loren ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo vivera maecenas accumsan
+            lacus vel facilisis.
+        </p>
+      </div>
     </div> <!-- mission content wrapper ends -->
   </section>
 
@@ -79,25 +58,32 @@
     </figure>
   </section>
 
-<section class="contact-section">
-  <div class="content-wrapper">
-    <h1>Contact us, because you all need this.</h1>
-    <div class="contact-content">
-
-      <div class="info-contacts">
-        <address>
-          <h2>General Information</h2>
-          <p>333 Main St., Lake Geneva, WI, 53147 <br>
-          555-555-5555 <br>
-        hello@unplugged.com</p>
-        </address>
-
-        <address>
-          <h2>Chat with a Facilitator</h2>
-          <p>555-555-5555 <br>
-          facilitator@unplugged.com</p>
-        </address>
+    <section class="contact-section">
+      <div class="content-wrapper">
+        <h2>Contact us, because you all need this.</h2>
+        <div class="contact-content">
+          <div>
+            <h4>General Information</h4>
+            <address>
+              <p>333 Main St., Lake Geneva, WI, 53147 <br>
+                  555-555-5555 <br>
+                  hello@unplugged.com
+              </p>
+            </address>
+          </div>
+          <div>
+            <h4>Chat with a Facilitator</h4>
+            <address>
+              <p>555-555-5555 <br>
+              facilitator@unplugged.com
+              </p>
+            </address>
+          </div>
+        </div>
       </div>
+    </section>
+
+  </main>
 
       <footer>
         <div class="content-wrapper">
@@ -126,4 +112,26 @@
         </div>
       </footer>
 
-</main> <!-- main wrapper -->
+<script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+  window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')
+</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+    
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+window.ga = function() {
+  ga.q.push(arguments)
+    };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</body>
+
+</html>
