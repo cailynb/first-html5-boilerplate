@@ -87,6 +87,116 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*----------------------- Base Header - Footer Styles ---------------------*/
+   header,
+   footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+   header .content-wrapper {
+    display: flex;
+    justify-content: center;
+   }
+
+   header nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+   }
+
+   header nav ul {
+    display: flex;
+    align-items: flex-end;
+   }
+
+   footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+   }
+
+   footer .social p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   }
+
+   .hero-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
+
+   aside {
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   aside .content-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
+
+   aside .form {
+    align-content: flex-start;
+    align-items: flex-end;
+   }
+
+   .features {
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   .features .content-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+   }
+
+   .features .features-items {
+    align-content: center;
+    align-items: center;
+   }
+
+   .reviews {
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   .reviews .content-wrapper {
+    justify-content: center;
+    align-items: center;
+   }
+
+   .mission {
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   .mission .content-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+   }
+
+   .contact-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+   .faq {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+   }
+
+   .faq .content-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+   }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
