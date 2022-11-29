@@ -87,7 +87,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
    /*----------------------- Base Header - Footer Styles ---------------------*/
+
 header,
 footer {
   display: flex;
@@ -96,11 +102,27 @@ footer {
   flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
+footer {
+  padding-left: 144px;
+  padding-bottom: 8px;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -108,11 +130,26 @@ header nav {
   justify-content: space-around;
   align-content: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 50%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -121,10 +158,20 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
    /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -135,6 +182,11 @@ footer .social p {
   display: flex;
   justify-content: flex-start;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+.hero-area h1 {
+  padding: 20px;
 }
 
 /* Aside */
@@ -144,6 +196,8 @@ footer .social p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+  padding: 20px;
 }
 
 /* Features */
@@ -152,6 +206,7 @@ footer .social p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .features .features-items {
@@ -159,6 +214,16 @@ footer .social p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 61%;
+}
+
+.features h2 {
+  padding: 20px;
+}
+
+.features p {
+  margin: 0;
+  padding: 80px;
 }
 
 /* Reviews */
@@ -167,8 +232,16 @@ footer .social p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
+.reviews .content-wrapper {
+  padding: 20px;
+}
+
+.reviews h3 {
+  width: 54%;
+}
    /* -------------------- Mobile Styles - About -------------------- */
 
 .mission {
@@ -176,6 +249,7 @@ footer .social p {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .contact-section {
@@ -183,6 +257,7 @@ footer .social p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
    /* -------------------- Mobile Styles - FAQ -------------------- */
@@ -192,6 +267,7 @@ footer .social p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .faq .content-wrapper {
@@ -199,6 +275,7 @@ footer .social p {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 
