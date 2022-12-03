@@ -114,6 +114,10 @@ img {
   width: 100%
 }
 
+figure {
+  margin: 0;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -235,6 +239,8 @@ footer .copyright {
   display: flex;
   justify-content: flex-start;
   flex-flow: row wrap;
+  background: url('../img/hero-area-background.jpg') center no-repeat rgb(28, 73, 61);
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -285,6 +291,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/feature-background.jpg') center no-repeat rgb(28, 73, 61);
+  background-size: cover;
 }
 
 .features .features-items {
@@ -604,13 +612,32 @@ input[type=button] {
 /*Desktop styles here*/
       
   /*------------HOMEPAGE------------*/
-      .content-wrapper {
-        max-width: 960px;
-      }
+    .content-wrapper {
+      max-width: 960px;
+    }
   
+    header {
+      padding: 15px 0;
+    }
+    
+    h2 {
+      font-size: 2.25em;
+    }
+    
+    h3,
+    h4 {
+      font-size: 1.875em;
+    }
+    
+    p {
+      font-size: 1.125em;
+      line-height: 1.333;
+    }
+
   /* Hero Area */
-      .hero-area h1 {
-        width: 55%;
+    .hero-area h1 {
+        font-size: 3.75em;
+        width: 80%;
       }
   
   /* Aside */
@@ -620,28 +647,45 @@ input[type=button] {
 
       aside .content-wrapper .form-description,
       aside .content-wrapper .form {
-        width: 50%;
+        width: 30%;
       }
 
+      .form-description p {
+        font-size: 1.125em;
+      }
+    
   /* Features */
       .features h2 {
-        width: 73%;
+        width: 90%;
       }
 
       .features articles {
-        flex-basis: 27%;
+        flex-basis: 33%;
       }
   
   /* Reviews */
       .reviews article div {
-        width: 40%;
+        width: 42%;
+      }
+  
+      .reviews h2 {
+        padding-bottom: 50px;
+      }
+    
+      footer h4 {
+        font-size: 1.875em;
       }
 
     /*------------ABOUT------------*/
 
       .mission h2,
       .contact-section .content-wrapper h2 {
-        width: 73%;
+        width: 95%;
+        font-size: 3em;
+      }
+
+      .contact-content h4 {
+        font-size: 1.875em;
       }
   
     /*------------FAQ------------*/
