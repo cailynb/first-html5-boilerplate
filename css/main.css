@@ -96,7 +96,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  color: #f1f0ec;
   text-align: left;
 }
 
@@ -106,7 +106,7 @@ ol {
 }
 
 a {
-  color: #e2e3ed;
+  color: #f1f0ec;
   text-decoration: none;  
 }
 
@@ -598,6 +598,22 @@ input[type=button] {
       width: 45%;
     }
 
+    .map figure {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56%;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
     .contact-section .content-wrapper h2 {
       width: 80%;
     }
@@ -698,6 +714,22 @@ input[type=button] {
       .contact-section .content-wrapper h2 {
         width: 95%;
         font-size: 3em;
+      }
+
+      .map figure {
+        width: 100%;
+        height: 0;
+        padding-bottom: 56%;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .map iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
 
       .contact-content h4 {
