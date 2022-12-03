@@ -110,6 +110,10 @@ a {
   text-decoration: none;  
 }
 
+img {
+  width: 100%
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
