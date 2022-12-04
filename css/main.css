@@ -103,6 +103,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -122,6 +124,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
  }
 
 h3,
@@ -130,11 +133,14 @@ h4 {
   font-size: 1.125em;
   line-height: 40px;
   margin: 20px 0;
+  font-weight: 500;
+  font-style: normal;
  }
 
 p {
   font-size: .875em;
   line-height: 1.285;
+  font-style: normal;
  }
 
  address {
@@ -167,6 +173,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -225,7 +239,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #202322;
+  background-color: #527158;;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -245,10 +259,11 @@ footer .copyright {
 
 .hero-area {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/hero-area-background.jpg') center no-repeat rgb(28, 73, 61);
+  background: url('../img/hero-area-background.jpg') center rgb(28, 73, 61);
   background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -265,7 +280,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: rgb(178, 216, 205);
+  background-color: rgb(167, 204, 193);
 }
 
 aside .form{
@@ -299,13 +314,14 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/feature-background.jpg') center no-repeat rgb(28, 73, 61);
+  background: url('../img/feature-background.jpg') center rgb(28, 73, 61);
   background-size: cover;
 }
 
 .features .features-items {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -315,7 +331,7 @@ input[type=button] {
 
 .features p {
   margin: 0;
-  padding: 80px;
+  text-align: center;
 }
 
 .features article {
@@ -334,7 +350,6 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 100%;
   background-color: #2a423a;
 }
 
@@ -342,8 +357,14 @@ input[type=button] {
   padding: 20px;
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
 .reviews h3 {
   width: 54%;
+  margin: 20px 0;
 }
 
    /* -------------------- Mobile Styles - About -------------------- */
@@ -353,7 +374,7 @@ input[type=button] {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: rgb(178, 216, 205);
+  background-color: rgb(167, 204, 193);
 }
 
 .map figure {
@@ -377,7 +398,6 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
   background-color: #2a423a;
 }
 
@@ -392,7 +412,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: rgb(178, 216, 205);
+  background-color: rgb(167, 204, 193);
 }
 
 .faq .content-wrapper {
@@ -516,15 +536,19 @@ input[type=button] {
   /*------------HOMEPAGE------------*/
 
     header {
-      padding: 15px 0;
-      justify-content: center;
+      padding: 33px 0;
+      justify-content: space-around;
     }
 
     header .content-wrapper {
-      justify-content: center;
+      justify-content: space-between;
       width: 100%;
     }
   
+    header figure {
+      width: 30%;
+    }
+
     header nav {
       width: 20%;
     }
@@ -573,8 +597,18 @@ input[type=button] {
       justify-content: space-between;
     }
 
+    .reviews h2 {
+      width: 85%;
+    }
+  
+    .reviews article figure,
     .reviews article div {
-      width: 100%;
+      width: 49%;
+    }
+  
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
 
     /* Footer */
@@ -584,14 +618,29 @@ input[type=button] {
       margin: 100px 0;
     }
 
-    .footer-content {
+    footer .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
     }
 
     footer .contact {
       margin-bottom: 0;
+    }
+
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+  
+    footer p {
+        line-height: 1.285;
+    }
+  
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
     }
 
     footer .copyright {
@@ -612,19 +661,7 @@ input[type=button] {
     }
 
     .map figure {
-      width: 100%;
-      height: 0;
-      padding-bottom: 56%;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .map iframe {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
+      padding-bottom: 45.5%;
     }
 
     .contact-section .content-wrapper h2 {
@@ -709,6 +746,7 @@ input[type=button] {
       }
   
   /* Reviews */
+      
       .reviews article div {
         width: 42%;
       }
@@ -716,7 +754,8 @@ input[type=button] {
       .reviews h2 {
         padding-bottom: 50px;
       }
-    
+  
+
       footer h4 {
         font-size: 1.875em;
       }
@@ -753,6 +792,13 @@ input[type=button] {
 
       .faq h2 {
         width: 100%;
+        font-size: 3em;
+      }
+
+      .faq h4,
+      .faq p {
+        font-size: 1.125em;
+        line-height: 1;
       }
     }
     
