@@ -308,17 +308,19 @@ input[type=button] {
   text-align: center;
   text-transform: uppercase;
 }
+
 /* Features */
 
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/feature-background.jpg') center rgb(28, 73, 61);
+  background: url('../img/feature-background.jpg');
   background-size: cover;
+  background-position: center;
 }
 
-.features .features-items {
+.features .feature-items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,7 +527,7 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 
   /** General Styles **/
@@ -533,6 +535,17 @@ input[type=button] {
       max-width: 640px;
       margin: 100px 0;
     }      
+
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
+
   /*------------HOMEPAGE------------*/
 
     header {
@@ -563,6 +576,16 @@ input[type=button] {
 
     /* Hero Area */
 
+    .hero-area {
+      min-height: 600px;
+    }
+    
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+  }
+
     /* Aside */
     aside .content-wrapper {
       display: flex;
@@ -578,18 +601,27 @@ input[type=button] {
     }
 
     /* Features */
+
+    .features h2 {
+      margin-bottom: 20px;
+    }
+
     .features article {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       flex-flow: column wrap;
       flex-basis: 50%;
     }
 
     .features .features-items-description {
-      width: 50%;
+      width: 62%;
     }
 
+    .features i {
+      margin-bottom: 30px;
+    }
+  
     /* Reviews */
 
     .reviews article {
@@ -690,7 +722,7 @@ input[type=button] {
 }
 
 
-    @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
       
   /*------------HOMEPAGE------------*/
@@ -737,11 +769,12 @@ input[type=button] {
       }
     
   /* Features */
+
       .features h2 {
         width: 90%;
       }
 
-      .features articles {
+      .features article {
         flex-basis: 33%;
       }
   
@@ -800,7 +833,7 @@ input[type=button] {
         font-size: 1.125em;
         line-height: 1;
       }
-    }
+}
     
 /* ==========================================================================
    Print styles.
