@@ -280,7 +280,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: rgb(167, 204, 193);
+  background-color: rgb(149, 182, 172);
 }
 
 aside .form{
@@ -376,7 +376,7 @@ input[type=button] {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: rgb(167, 204, 193);
+  background-color: rgb(149, 182, 172);
 }
 
 .map figure {
@@ -414,7 +414,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: rgb(167, 204, 193);
+  background-color: rgb(149, 182, 172);
 }
 
 .faq .content-wrapper {
@@ -708,6 +708,7 @@ input[type=button] {
 
   /*------------FAQ------------*/
 
+/*fix h2, not centered or on one line, and placement of all the questions */
     .faq .content-wrapper {
       justify-content: space-between;
     }
@@ -718,6 +719,12 @@ input[type=button] {
 
     .faq h2 {
       width: 100%;
+    }
+
+    .faq h4,
+    .faq p {
+      font-size: .875em;
+      line-height: 1.125;
     }
 }
 
@@ -823,6 +830,7 @@ input[type=button] {
   
     /*------------FAQ------------*/
 
+/*fix h2, not centered or on one line, and placement of all the questions */
       .faq h2 {
         width: 100%;
         font-size: 3em;
